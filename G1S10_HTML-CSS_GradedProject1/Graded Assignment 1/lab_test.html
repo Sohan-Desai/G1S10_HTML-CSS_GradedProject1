@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link CSS Stylesheet-->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Lab Test</title>
+</head>
+
+<body>
+   
+    <div class="container form-container">
+        <div class="wrapper form-wrapper">
+            <form id="lab_form" action="#">
+                <h2>1. Your Contact Details</h2>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" id="full-name" class="input-box" placeholder=" " autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label class="form-label" for="full-name">Full Name</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" id="patient-id" class="input-box" placeholder=" " autocomplete="off">
+                        <div class="underline"></div>
+                        <label class="form-label" for="patient-id">Patient Id if exists</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" id="number" class="input-box" placeholder=" " autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label class="form-label" for="number">Contact Number</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="email" id="email" class="input-box" placeholder=" " autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label class="form-label" for="email">Email Id</label>
+                    </div>
+                </div>
+
+                <h2>2. Address</h2>
+                <div class="form-row">
+                    <div class="input-data">
+                        <input type="text" id="full-name" class="input-box" placeholder=" " autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label class="form-label" for="full-name">H-No</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" id="patient-id" class="input-box" placeholder=" " autocomplete="off">
+                        <div class="underline"></div>
+                        <label class="form-label" for="patient-id">Street</label>
+                    </div>
+                    <div class="input-data">
+                        <input type="text" id="number" class="input-box" placeholder=" " autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label class="form-label" for="number">Area</label>
+                    </div>
+                </div>
+                <div class="form-row select-row">
+                    <h3>District</h3>
+                    <div class="input-data">
+                        <select class="select" id="" required>
+                            <option disabled selected>Choose</option>
+                            <option value="BOM">Mumbai</option>
+                            <option value="DEL">Delhi</option>
+                            <option value="BLR">Bangalore</option>
+                            <option value="MAS">Chennai</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2>3. Choose the Test Type</h2>
+                <div class="form-row check-row">
+                    <p class="message">(Check atleast one box without fail)</p>
+                    <div class="check-box">
+                        <input type="checkbox" id="cbc" value="cbc">
+                        <label for="cbc">CBC</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="urine" value="urine">
+                        <label for="urine">Complete Urine</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="lipid" value="lipid">
+                        <label for="lipid">Lipid Profile</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="tsh" value="tsh">
+                        <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+                    </div>
+                    <div class="check-box">
+                        <input type="checkbox" id="glucose" value="glucose">
+                        <label for="glucose">Glucose Test</label>
+                    </div>
+                </div>
+
+                <h2>4. Do you want a hard copy of the report as well?</h2>
+                <div class="form-row report-row">
+                    <div class="radio-box">
+                        <input type="radio" id="yes" name="report" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="radio-box">
+                        <input type="radio" id="no" name="report" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+
+                <h2>5. Select your Comfortable Date and Time</h2>
+                <div class="form-row date-row">
+                        <input type="datetime-local">
+                </div>
+            </form>
+        </div>
+        <div class="sticky-overlay">
+            <div class="image-box"></div>
+        </div>
+        <div class="wrapper image-wrapper"></div>
+    </div>
+    <div class="button-bar">
+        <button type="reset" form="lab_form">Reset</button>
+        <button type="submit" form="lab_form">Submit</button>
+    </div>
+</body>
+
+</html>

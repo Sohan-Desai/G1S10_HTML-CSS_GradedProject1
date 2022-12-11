@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    background: #f5f6f7;
+}
+
+/* ######################################### utility classes ######################################### */
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+/* ######################################### header styling ######################################### */
+
+header{
+    display: block;
+    width: 100%;
+    max-height: 120px;
+    background-color: #666;
+    box-shadow: 0px 5px 10px #777;
+}
+
+.heading{
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.heading h1{
+    color: #f5f6f7;
+    font-size: 5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.navbar{
+    display: block;
+    position: sticky;
+    top: -1px;
+    background: #aaa;
+    z-index: 10;
+}
+
+.menu-items{
+    display: flex;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.menu-items > li{
+    position: relative;
+    list-style-type: none;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.menu-items > li:hover{
+    background: #333;
+}
+
+.menu-items a.link{
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown{
+    display: block;
+    position: absolute;
+    min-width: 12rem;
+    width: 90%;
+    left: 5%;
+    top: 100%;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0px 5px 10px #777;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown ul{
+    display: block;
+    margin: 1rem;
+}
+
+.dropdown ul > li{
+    list-style-type: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.dropdown ul a.sublink{
+    font-size: 1.65rem;
+    font-weight: 400;
+    /* letter-spacing: 0.1rem; */
+    text-decoration: none;
+    color: #0492c2;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-items > li:nth-of-type(2):hover .dropdown1{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.menu-items > li:nth-of-type(3):hover .dropdown2{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.dropdown ul a.sublink:hover{
+    color: #296d98;
+}
+
+.fas{
+    float: right;
+    padding: 0.4rem;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 50rem;
+    width: 100%;
+    background-image: url(/Images/Animation/ani1.jpg);
+    background-size:cover;
+    background-position: center;
+    border: 2px solid steelblue;
+    animation: slide_animation 60s infinite linear;
+}
+
+@keyframes slide_animation{
+    0%{
+        background-image: url(/Images/Animation/ani1.jpg);
+    }
+    20%{
+        background-image: url(/Images/Animation/ani2.png);
+    }
+    40%{
+        background-image: url(/Images/Animation/ani3.jpg);
+    }
+    60%{
+        background-image: url(/Images/Animation/ani4.jpg);
+    }
+    80%{
+        background-image: url(/Images/Animation/ani5.jpg);
+    }
+}
+
+.covid-care h2,
+.diabetes-care h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.5rem;
+}
+
+.box-wrapper{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.box-wrapper .box{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f2eeff;
+    box-shadow: 0px 5px 10px #777;
+    border-radius: 5px;
+    transition: transform 300ms ease-in-out;
+}
+
+.box-wrapper .box h3{   
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.box-wrapper .box img{
+    aspect-ratio: 16/9;
+    width: 25rem;
+    object-fit: fill;
+    object-position: center;
+}
+
+.box-wrapper .box .price{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #69b5ef;
+}
+
+.box-wrapper .box .original{
+    color: #999;
+    text-decoration: line-through;
+}
+
+.box-wrapper .box .btn{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffa500;
+    background-color: #d1cff1;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+
+.box-wrapper .box:hover{
+    z-index: 5;
+    transform: scale(105%);
+}
+
+.box-wrapper .box .btn:active{
+    background-color: rgb(250, 234, 230);
+    border: 1px solid rgb(0, 255, 76);
+}
+
+footer{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    background: #000;
+}
+
+footer h1{
+    color: #f5f6f7;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+/* ######################################### lab test form ######################################### */
+
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.form-container .wrapper{
+    width: 50%;
+}
+
+.form-wrapper{
+    display: block;
+    background: #ffffff;
+    padding: 2.5rem 4rem 1rem;
+    float: left;
+}
+
+.image-wrapper{
+    display: block;
+    float: right;
+}
+
+.sticky-overlay{
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    float: left;  
+    margin-right: -100%;
+    pointer-events: none;
+}
+
+.sticky-overlay .image-box{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    border: none;
+    background-image: url(/Images/Lab-Test/lab-test.jpg);
+    background-size: cover;
+    background-position: center;
+    outline: none;
+    pointer-events: auto;
+}
+
+.form-wrapper h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.form-wrapper .form-row{
+    display: flex;
+    margin: 2rem 0 2rem 0;
+}
+
+.form-wrapper .form-row:nth-of-type(3){
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 2rem;
+
+}
+
+.form-wrapper .form-row .input-data{
+    width: 100%;
+    height: 4rem;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.form-wrapper .form-row:nth-of-type(3) .input-data{
+    flex-basis: 46%;
+}
+
+.input-box{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.form-label{
+    position: absolute;
+    bottom: 1rem;
+    font-size: 1.4rem;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-data .underline{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+}
+
+.input-box:focus ~ .form-label,
+.input-box:not(:placeholder-shown).input-box:not(:focus) ~ .form-label{
+    transform: translateY(-2rem);
+    color: #3498db;
+    font-size: 1.3rem;
+}
+
+.input-box:not(:placeholder-shown).input-box:not(:focus) ~ .form-label{
+    color: #aaa;
+}
+
+.input-data .underline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #3498db;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.input-box:focus ~ .underline::before,
+.input-box:not(:placeholder-shown).input-box:not(:focus) ~ .underline::before{
+    transform: scaleX(1);
+}
+
+.select-row{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.select-row h3{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 1rem;
+}
+
+.input-data .select{
+    display: block;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    color: #aaa;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+}
+
+.form-wrapper .check-row{
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.form-wrapper .check-row p.message{
+    font-size: 1.2rem;
+    margin: 0 0 1rem 1rem;
+}
+
+.form-wrapper .check-row p::after{
+    content: '*';
+    color: red;
+    font-size: larger;
+}
+
+.form-wrapper .check-row .check-box{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 4rem;
+}
+
+.form-wrapper .check-row .check-box label,
+.form-wrapper .report-row .radio-box label{
+    font-size: 1.4rem;
+    padding-left: 3rem;
+}
+
+.form-wrapper .check-row .check-box  input[type='checkbox']{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-wrapper .report-row,
+.form-wrapper .date-row{
+    margin: 1rem 0;
+}
+
+.form-wrapper .report-row .radio-box{
+    padding: 1rem 0 0 4rem;
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper .report-row .radio-box input[type='radio']{
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-wrapper .date-row input[type='datetime-local']{
+    margin: 1rem 0 1rem 2rem;
+    padding: 1rem 1.5rem;
+    color: #777;
+    font-size: 1.4rem;
+    font-weight: 600;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    outline: none;
+}
+
+.button-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    transform: translateX(-50%);
+    padding: 2.5rem;
+}
+
+.button-bar button{
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #ffffff;
+    background: #a45ee9;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin: 0 2.5rem;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-bar button:hover{
+    background: #9932cc;
+}
+
+/* ######################################### media queries for responsive layout ######################################### */
+
+@media (max-width: 1024px){
+    html{
+        font-size: 50%;
+    }
+    .form-wrapper .form-row{
+        display: block;
+    }
+    .form-wrapper form .form-row .input-data{
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+    .menu-items > li{
+        padding: 1rem 2rem;
+    }
+    .slider-frame{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 40%;
+    }
+    .button-bar button{
+        margin: 0 1rem;
+    }
+}
+
+@media (max-height: 625px){
+    html{
+        font-size: 50%;
+    }
+    .button-bar{
+        bottom: 0;
+    }
+}
