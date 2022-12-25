@@ -45,7 +45,7 @@ header{
 .heading h1{
     color: #f5f6f7;
     font-size: 5rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.2rem;
     cursor: pointer;
 }
@@ -163,13 +163,13 @@ header{
         background-image: url(../Images/Animation/ani4.jpg);
     }
     80%{
-        background-image: url(../Images/Animation/ani5.jpgs);
+        background-image: url(../Images/Animation/ani5.jpg);
     }
 }
 
 .covid-care h2,
 .diabetes-care h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 600;
     margin: 1.5rem;
 }
