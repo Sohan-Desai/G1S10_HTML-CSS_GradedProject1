@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --shadow: 0px 5px 10px #777;
 }
 
 html{
@@ -31,7 +32,7 @@ header{
     width: 100%;
     max-height: 120px;
     background-color: #666;
-    box-shadow: 0px 5px 10px #777;
+    box-shadow: var(--shadow);
 }
 
 .heading{
@@ -91,7 +92,7 @@ header{
     left: 5%;
     top: 100%;
     background-color: rgb(236, 236, 236);
-    box-shadow: 0px 5px 10px #777;
+    box-shadow: var(--shadow);
     opacity: 0;
     transform: scaleY(0);
     transform-origin: top;
@@ -142,7 +143,7 @@ header{
     overflow: hidden;
     height: 50rem;
     width: 100%;
-    background-image: url(/Images/Animation/ani1.jpg);
+    background-image: url(../Images/Animation/ani1.jpg);
     background-size:cover;
     background-position: center;
     border: 2px solid steelblue;
@@ -151,19 +152,19 @@ header{
 
 @keyframes slide_animation{
     0%{
-        background-image: url(/Images/Animation/ani1.jpg);
+        background-image: url(../Images/Animation/ani1.jpg);
     }
     20%{
-        background-image: url(/Images/Animation/ani2.png);
+        background-image: url(../Images/Animation/ani2.png);
     }
     40%{
-        background-image: url(/Images/Animation/ani3.jpg);
+        background-image: url(../Images/Animation/ani3.jpg);
     }
     60%{
-        background-image: url(/Images/Animation/ani4.jpg);
+        background-image: url(../Images/Animation/ani4.jpg);
     }
     80%{
-        background-image: url(/Images/Animation/ani5.jpg);
+        background-image: url(../Images/Animation/ani5.jpgs);
     }
 }
 
@@ -190,7 +191,7 @@ header{
     justify-content: space-between;
     padding: 1rem;
     background: #f2eeff;
-    box-shadow: 0px 5px 10px #777;
+    box-shadow: var(--shadow);
     border-radius: 5px;
     transition: transform 300ms ease-in-out;
 }
@@ -318,7 +319,7 @@ footer h1{
     width: 50%;
     margin: 0;
     border: none;
-    background-image: url(/Images/Lab-Test/lab-test.jpg);
+    background-image: url(../Images/Lab-Test/lab-test.jpg);
     background-size: cover;
     background-position: center;
     outline: none;
