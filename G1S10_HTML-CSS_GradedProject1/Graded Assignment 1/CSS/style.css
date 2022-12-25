@@ -4,11 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --shadow: 0px 5px 10px #777;
 }
 
 html{
     font-size: 62.5%;
+    --shadow: 0px 5px 10px #777;
 }
 
 body{
@@ -114,7 +114,6 @@ header{
 .dropdown ul a.sublink{
     font-size: 1.65rem;
     font-weight: 400;
-    /* letter-spacing: 0.1rem; */
     text-decoration: none;
     color: #0492c2;
     transition: color 0.3s ease-in-out;
