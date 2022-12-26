@@ -301,9 +301,9 @@ footer h1{
     float: right;
 }
 
-/* "fixed" being in reference to container having transform property it scrolls with the form-container window
+/* As "fixed" is being in reference to container having "transform" property, it scrolls with the form-container window
     hence we opt for a sticky overlay that covers right half of the form-container.
-    and has an image-box with position:absolute covering left-half of sticky-overlay
+    And has an image-box with "position:absolute" covering left-half of sticky-overlay
 */
 .sticky-overlay{
     position: sticky;
