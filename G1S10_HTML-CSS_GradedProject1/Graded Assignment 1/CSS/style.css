@@ -138,6 +138,8 @@ header{
     padding: 0.4rem;
 }
 
+/* ######################################### animation section ######################################### */
+
 .slider-frame{
     overflow: hidden;
     height: 50rem;
@@ -166,6 +168,8 @@ header{
         background-image: url(../Images/Animation/ani5.jpg);
     }
 }
+
+/* ######################################### products section styling ######################################### */
 
 .covid-care h2,
 .diabetes-care h2{
@@ -241,6 +245,8 @@ header{
     background-color: rgb(250, 234, 230);
     border: 1px solid rgb(0, 255, 76);
 }
+
+/* ######################################### footer styling ######################################### */
 
 footer{
     display: block;
@@ -542,8 +548,14 @@ footer h1{
     .menu-items > li{
         padding: 1rem 2rem;
     }
-    .slider-frame{
-        margin-top: 1rem;
+}
+
+@media (max-height: 625px){
+    html{
+        font-size: 45%;
+    }
+    .button-bar{
+        bottom: 0;
     }
 }
 
@@ -553,14 +565,5 @@ footer h1{
     }
     .button-bar button{
         margin: 0 1rem;
-    }
-}
-
-@media (max-height: 625px){
-    html{
-        font-size: 50%;
-    }
-    .button-bar{
-        bottom: 0;
     }
 }
